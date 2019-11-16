@@ -1,7 +1,6 @@
 ## Kubernetes
 
-### Kubernetes cheatsheet
-### https://kubernetes.io/docs/reference/kubectl/cheatsheet/#deleting-resources
+
 
 ## Install kubectl to Ubuntu
 https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-linux
@@ -59,3 +58,6 @@ CREATE TABLE `users` (
 ```
 eval $(minikube docker-env -u)
 ```
+
+### Kubernetes cheatsheet
+### https://kubernetes.io/docs/reference/kubectl/cheatsheet/#deleting-resources
