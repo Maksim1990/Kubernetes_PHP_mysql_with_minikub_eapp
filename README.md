@@ -1,5 +1,5 @@
 ## Kubernetes
-### http://blog.adnansiddiqi.me/deploy-your-first-scaleable-php-mysql-web-application-in-kubernetes/
+
 ### Kubernetes cheatsheet
 ### https://kubernetes.io/docs/reference/kubectl/cheatsheet/#deleting-resources
 
