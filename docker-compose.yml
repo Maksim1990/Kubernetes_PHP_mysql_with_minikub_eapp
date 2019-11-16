@@ -1,0 +1,23 @@
+version: '2'
+services:
+  mysql:
+        image: mysql:5.7.21
+        command: --init-file /data/app/init.sql
+        container_name: mysql-server-80
+        volumes:
+            - ./data/mysql:/var/lib/mysql
+            - ./docker/mysql/init.sql:/data/app/init.sql
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD:  kubertest
+            MYSQL_DATABASE: my_db
+        ports:
+          - "8082:3306"
+  website:
+    container_name: php72
+    build:
+      context: ./
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - 8000:80
